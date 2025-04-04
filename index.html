@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password & date validation</title>
+</head>
+<center><body>
+    <form action="./successfully.html">
+        <h1>Login form</h1>
+        <br>
+        <label><b>User Name</b></label>
+        <br>
+        <input type="text" pattern="[a-zA-Z0-9!@#$%^&*()_=]+." title="exe@123" autocomplete="off" required>
+        <br>
+        <br>
+        <label for="password"><b>Password</b></label>
+        <br>
+        <input type="text" id="password" name="password" 
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+               title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+               autocomplete="off"
+               required>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+</body></center>
+</html>
